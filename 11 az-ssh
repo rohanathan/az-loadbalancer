@@ -3,6 +3,6 @@ az network nsg rule create \
 --nsg-name webnsg \
 --name allowssh \
 --priority 101 \
---protocol tcp \
 --destination-port-range 22 \
 --access allow
+--protocol tcp \
