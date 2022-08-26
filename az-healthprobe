@@ -1,0 +1,9 @@
+az network lb probe create \
+--resource-group az-lb-rg \
+--lb-name loadbalancer \
+--name healthprobe \
+--protocol http \
+--port 80 \
+--path health.html \
+--interval 10 \
+--threshold 3
