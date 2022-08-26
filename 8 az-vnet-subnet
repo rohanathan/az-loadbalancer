@@ -1,0 +1,6 @@
+az network vnet create \
+--resource-group az-lb-rg \
+--name vnetlb \
+--address-prefixes 10.0.0.0/16 \
+--subnet-name subnetlb \
+--subnet-prefix 10.0.1.0/24
