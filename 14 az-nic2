@@ -1,7 +1,7 @@
 az network nic create \
 --resource-group az-lb-rg \
 --name webnic2 \
---vnet-name vnet1 \
---subnet subnet1 \
+--vnet-name vnetlb \
+--subnet subnetlb \
 --lb-name loadbalancer \
 --lb-address-pools backendpool
