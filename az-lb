@@ -1,0 +1,7 @@
+az network lb create \
+-n loadbalancer \
+-g az-lb-rg \
+--sku standard \
+--public-ip-address publicip \
+--frontend-ip-name frontendpool \
+--backend-pool-name backendpool 
