@@ -1,0 +1,4 @@
+az network public-ip create \
+--resource-group az-lb-rg \
+--name publicip \
+--sku standard
