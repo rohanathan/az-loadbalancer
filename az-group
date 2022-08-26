@@ -1,0 +1,1 @@
+az group create --name az-lb-rg --location westeurope
