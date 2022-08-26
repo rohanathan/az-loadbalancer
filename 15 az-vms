@@ -1,0 +1,23 @@
+### VM1 with nic1
+
+az vm create \
+--resource-group az-lb-rg \
+--name webvm1 \
+--image ubuntults \
+--size Standard_B1ms \
+--admin-username clouduser \
+--generate-ssh-keys \
+--zone 1 \
+--nics webnic1
+
+### VM2 with nic 2
+
+az vm create \
+--resource-group az-lb-rg \
+--name webvm2 \
+--image ubuntults \
+--size Standard_B1ms \
+--admin-username clouduser \
+--generate-ssh-keys \
+--zone 2 \
+--nics webnic2
