@@ -1,8 +1,8 @@
 az network nic create \
 --resource-group az-lb-rg \
 --name webnic1 \
---vnet-name vnet1 \
---subnet subnet1 \
+--vnet-name vnetlb \
+--subnet subnetlb \
 --lb-name loadbalancer \
 --lb-address-pools backendpool \
 --lb-inbound-nat-rules natrulessh
