@@ -1,0 +1,8 @@
+az network lb inbound-nat-rule create \
+--resource-group az-lb-rg \
+--lb-name loadbalancer \
+--name natrulessh \
+--protocol tcp \
+--frontend-port 50001 \
+--backend-port 22 \
+--frontend-ip-name frontendpool
