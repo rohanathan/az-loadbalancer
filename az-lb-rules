@@ -1,0 +1,10 @@
+az network lb rule create \
+--resource-group az-lb-rg \
+--lb-name loadbalancer \
+--name httprule \
+--protocol tcp \
+--frontend-port 80 \
+--backend-port 80 \
+--frontend-ip-name frontendpool \
+--backend-pool-name backendpool \
+--probe-name healthprobe
