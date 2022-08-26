@@ -1,0 +1,3 @@
+az network lb show \
+--resource-group az-lb-rg \
+--name loadbalancer
