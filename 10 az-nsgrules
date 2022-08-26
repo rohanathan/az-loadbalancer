@@ -1,0 +1,8 @@
+az network nsg rule create \
+--resource-group az-lb-rg\
+--nsg-name webnsg \
+--name allowhttp \
+--priority 100 \
+--protocol tcp \
+--destination-port-range 80 \
+--access allow
