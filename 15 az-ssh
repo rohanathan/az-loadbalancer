@@ -1,0 +1,4 @@
+##Generate the SSH keys and use default settings after the command is typed
+
+ssh-keygen
+
