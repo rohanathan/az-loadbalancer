@@ -1,7 +1,7 @@
 az network lb create \
--n loadbalancer \
--g az-lb-rg \
---sku standard \
+--resource-group azloadbalancer \
+--name loadbalancer \
 --public-ip-address publicip \
 --frontend-ip-name frontendpool \
---backend-pool-name backendpool 
+--backend-pool-name backendpool \
+--sku standard
